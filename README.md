@@ -2,7 +2,7 @@
 
 Now that you have your App ready for distribution follow these steps to publish the app to Apple/Play store:
 
-# PlayStore Android
+## PlayStore Android
 
 Before start make sure you have:
 - Signed APK 
@@ -11,11 +11,15 @@ Before start make sure you have:
 - Group of testers with goggle's account (for alpha/beta release)
 - Create the Application in Google Play Console
 
-### Assets
 ---
 
+### Assets
+
+---
+
+
 #### Screenshot
-Take 2 screenshots of the app while running on Emulator, then upload those to screenshot panel.
+Take 2 screenshots of the app while running on Emulator, then upload those to screenshot panel in the form step.
 
 #### High-res icon
 - 32-bit PNG (with alpha)
@@ -31,7 +35,9 @@ Take 2 screenshots of the app while running on Emulator, then upload those to sc
 
 loged in **Google Play Console** go to **Settings > Manage testers >** then create list of testers and add their emails to the list
 
-### Publishing (FORM)
+---
+
+### Publishing (Form Step)
 ---
 
 - Complete the form with all the required fields, you will need to include the required images here.
@@ -39,8 +45,8 @@ loged in **Google Play Console** go to **Settings > Manage testers >** then crea
 - Set a group of countries where the app will be available.
 - Complete the **Content Rating** Review
 
-### TIP
-if you miss anything in the process of publishing the app, you will find an alert icon in the left menu pointing to root of the issue.
+#### TIP
+>if you miss anything in the process of publishing the app, you will find >an alert icon in the left menu pointing to root of the issue.
 
 
 
