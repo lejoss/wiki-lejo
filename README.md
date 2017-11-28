@@ -62,21 +62,43 @@ Before start make sure which distribution process you want to run:
 - [Test Flight]
 
 
-Now that you know which process to Run, follow the steps for exporting the project with XCODE
+Now that you know which process to Run, continue with the steps for exporting the project with `xcode`
 
 **Important Note**
 
->Make sure you have the right Provisioning Profile when signing the app in your `xcode` (Ask your team for support)
+>Make sure you have the right **Provisioning Profile** when signing the app in your `xcode` (Ask your team for credentials)
 
 
 Now that you have exported your app via `xcode` you can upload it to **iTunes Connect** via [Application Loader]
 
 
-Before continue make sure you have:
+Once you have uploaded your `.ipa` with [Application Loader]  follow next steps
 
-- `.IPA` Build File with Provisioning Profile
-- [Apple Developer Account]
-- [iTunes Connect] Account
+### Step 1: Configure Certificates, Identifiers & Profiles
+- Go to https://developer.apple.com/
+- Log in as White Prompt Member (_Ask your team for credentials_)
+-  Select **Certificates, Identifiers & Profiles**
+
+##### Manage User Devices
+-  **Select > Devices**  _from left Menu panel_
+-  **Register User's Device** (_These are the users that will be testing the app_)
+-  **Select > Provisioning Profiles** _from left Menu panel_
+-  _from Right Menu Panel_ **Create new Provisioning Profile**
+-  Select `AD HOC` and continue the wizard steps
+
+
+
+### Step 2: Create an IOs App in the Apple Store for adhoc or public distribution
+- Go to [iTunes Connect]
+- Administration account is support@whiteprompt.com. The password in the the password repository
+- Ask the Administrator to [[Create a Development account on Itunes Connect]] 
+- Receive and accept the invitation
+- Log into https://itunesconnect.apple.com/login
+- Go to Apps
+- Click the `+` Symbol `->` New App
+- Complete the form
+
+
 
 if you don't have these accounts ask in your team for support.
 
