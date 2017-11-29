@@ -1,8 +1,11 @@
 # Publishing an Mobile App
 
-Now that you have your App ready for distribution follow these steps to publish the app to Apple/Play store:
+>This is Not a Step by Step guide, rather a helpful set of tips that will save you time through the process of publishing an app.
+
+
 
 ## PlayStore Android
+Now that you have your App ready for distribution follow these steps to publish the app to Apple/Play store:
 
 Before start make sure you have:
 - Signed APK 
@@ -33,17 +36,23 @@ Take 2 screenshots of the app while running on Emulator, then upload those to sc
 ### Testers
 ---
 
-loged in **Google Play Console** go to **Settings > Manage testers >** then create list of testers and add their emails to the list
+log in **Google Play Console** go to **Settings > Manage testers >** then create list of testers and add their emails to the list
 
 ---
 
-### Publishing (Form Step)
+### Publishing
 ---
+
+##### Store listing
 
 - Complete the form with all the required fields, you will need to include the required images here.
+
+##### Content Rating
+- Complete the Content Rating Review
+ 
+##### Others
 - **Manage Production Releases:** you can create Alpha, Beta or Production Releases, select your release and upload a valid signed APK
 - Set a group of countries where the app will be available.
-- Complete the **Content Rating** Review
 
 #### TIP
 >if you miss anything in the process of publishing the app, you will find an alert icon in the left menu pointing to root of the issue.
@@ -74,21 +83,29 @@ Now that you have exported your app via `xcode` you can upload it to **iTunes Co
 
 Once you have uploaded your `.ipa` with [Application Loader]  follow next steps
 
-### Step 1: Configure Certificates, Identifiers & Profiles
+### Step 1: Configure Certificates, Identifiers & Profiles `*`
+
+---
+
+
 - Go to https://developer.apple.com/
 - Log in as White Prompt Member (_Ask your team for credentials_)
 -  Select **Certificates, Identifiers & Profiles**
+-   **Select > Provisioning Profiles** _from left Menu panel_
+-  _from Right Menu Panel_ **Create new Provisioning Profile**
+-  Select what type of distribution you need and continue the wizard steps
 
-##### Manage User Devices
+##### Manage User Devices (AD HOC)
 -  **Select > Devices**  _from left Menu panel_
 -  **Register User's Device** (_These are the users that will be testing the app_)
--  **Select > Provisioning Profiles** _from left Menu panel_
--  _from Right Menu Panel_ **Create new Provisioning Profile**
--  Select `AD HOC` and continue the wizard steps
 
 
 
-### Step 2: Create an IOs App in the Apple Store for adhoc or public distribution
+
+### Step 2: Create an IOs App in the Apple Store for AD HOC or public distribution
+
+---
+
 - Go to [iTunes Connect]
 - Administration account is support@whiteprompt.com. The password in the the password repository
 - Ask the Administrator to [[Create a Development account on Itunes Connect]] 
@@ -97,10 +114,54 @@ Once you have uploaded your `.ipa` with [Application Loader]  follow next steps
 - Go to Apps
 - Click the `+` Symbol `->` New App
 - Complete the form
+ 
+_If you don't have these accounts ask in your team for support._
+
+##### Required Assets
+- 4 screenshot 	of the App
+1242 x 2208 pixels for portrait
+2208 x 1242 pixels for landscape
+http://help.apple.com/itunes-connect/developer/#/devd274dd925
+
+_After completing the form you can send your app for revision_
+
+>use the iTunesConnect dashboard to manage and configure your distribution.
+
+
+### Step 3:  Distribute an IOs App to testers using TestFlight
+
+---
+
+Test Flight is the preferred method. An alternative would be [[Distribute an IOs App to testers using AdHoc Distribution]]
+
+- Get the email names and email addresses of the testers
+- Open https://itunesconnect.apple.com/login
+- If you don’t have an account ask the Administrator to [[Create a Development account on Itunes Connect]] 
+- Open My Apps
+- Go to Test Flight
+- Create new Group
+- Add testers (_all the testers will need to download test flight app for testing_)
+
+##### Manage Compilations
+ You can manage your compilations from 
+ **iTunesConnect  > TestFlight > Compilations**
+ 
+ - Add a group of testers to the compilation
+ - Remove current compilation (_only if you need_)
+ 
+>The process of publishing your app to apple store will take a couple days depending on what revions you had from the Apple Revision Team
 
 
 
-if you don't have these accounts ask in your team for support.
+ 
+
+
+
+
+
+
+
+
 
 
 
